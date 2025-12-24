@@ -1,0 +1,85 @@
+/* Haccp.module.css */
+
+/* [중요] Smart HACCP 그라데이션 텍스트 */
+.gradientText {
+  background: linear-gradient(to right, #a78bfa, #f472b6); /* purple-400 to pink-400 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* SSR 환경 브라우저 호환성 */
+  display: inline-block; /* 배경 계산을 위해 필수 */
+}
+
+/* 피처 카드 스타일 */
+.featureCard {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: #f5f3ff; /* bg-purple-50 */
+  border: 1px solid #ede9fe; /* border-purple-100 */
+  transition: all 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-0.5rem); /* hover:-translate-y-2 */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.iconCircle {
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  color: #9333ea; /* text-purple-600 */
+}
+
+/* 상세 설명 이미지 영역 글로우 효과 */
+.imageContainer {
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  z-index: 10;
+}
+
+.glowEffect {
+  position: absolute;
+  inset: -1rem;
+  background-color: #ddd6fe; /* bg-purple-200 */
+  border-radius: 9999px;
+  opacity: 0.3;
+  filter: blur(48px);
+  z-index: 0;
+}
+
+/* CTA 섹션 */
+.ctaSection {
+  background-color: #111827;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.btnPrimary {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #9333ea; /* bg-purple-600 */
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.btnPrimary:hover {
+  background-color: #7e22ce;
+}

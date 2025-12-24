@@ -1,0 +1,32 @@
+/* Jetong View 전용 스타일 모듈 */
+
+.fontNoto {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.heroPattern {
+  background-color: #0f172a;
+  background-image: radial-gradient(#1e293b 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.blob {
+  position: absolute;
+  filter: blur(50px);
+  z-index: 0;
+  opacity: 0.4;
+}
+
+/* 브랜드 고유 색상 */
+.brandViewPrimary {
+  color: #0ea5e9;
+}
+
+.brandViewSecondary {
+  color: #10b981;
+}
+
+/* 네온 효과 */
+.shadowViewNeon {
+  box-shadow: 0 0 20px rgba(14, 165, 233, 0.5);
+}

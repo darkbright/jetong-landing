@@ -1,0 +1,128 @@
+/* Safety.module.css */
+
+/* 히어로 섹션 */
+.header {
+  background-color: #111827; /* bg-gray-900 */
+  border-bottom: 1px solid #1f2937; /* border-gray-800 */
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background-color: #7f1d1d; /* bg-red-900 */
+  color: #fca5a5; /* text-red-300 */
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border: 1px solid #b91c1c; /* border-red-700 */
+}
+
+/* AI 산업 안전관리 시스템 그라데이션 텍스트 */
+.gradientTitle {
+  background: linear-gradient(to right, #ef4444, #f97316); /* red-500 to orange-500 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  -webkit-text-fill-color: transparent; /* SSR 환경 텍스트 실종 방지 핵심 */
+}
+
+/* 핵심 기능 카드 */
+.featureCard {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: #fef2f2; /* bg-red-50 */
+  border: 1px solid #fee2e2; /* border-red-100 */
+  transition: all 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.iconCircle {
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  color: #dc2626; /* text-red-600 */
+}
+
+/* 시스템 구성도 이미지 및 글로우 효과 */
+.imageArea {
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  z-index: 10;
+}
+
+.glowEffect {
+  position: absolute;
+  inset: -1rem;
+  background-color: #fecaca; /* bg-red-200 */
+  border-radius: 9999px;
+  opacity: 0.3;
+  filter: blur(48px);
+  z-index: 0;
+}
+
+/* CTA 섹션 */
+.ctaArea {
+  background-color: #111827;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.btnRed {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #dc2626; /* bg-red-600 */
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.btnRed:hover {
+  background-color: #b91c1c;
+}
+
+.sideBySide {
+  display: flex;
+  flex-direction: column; /* 기본은 세로 */
+  align-items: center;
+  gap: 4rem; /* gap-16 */
+}
+
+/* 태블릿 이상 화면(768px)부터 가로 배치 */
+@media (min-width: 768px) {
+  .sideBySide {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .textSide {
+    flex: 1;
+    text-align: left; /* 가로 배치 시 텍스트 왼쪽 정렬 */
+  }
+  
+  .imageSide {
+    flex: 1;
+    width: 100%;
+  }
+}
