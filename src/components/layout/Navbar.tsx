@@ -39,10 +39,12 @@ const Navbar: Component = () => {
             <A href="/tech" class={activeClass("/tech")}>
               Technology
             </A>
+            <A href="/sensors" class={activeClass("/sensors")}>
+              Sensors
+            </A>
             <A href="/programs" class={activeClass("/programs")}>
               Programs
             </A>
-
             <A
               href="/contact"
               class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium transition-colors shadow-sm"
